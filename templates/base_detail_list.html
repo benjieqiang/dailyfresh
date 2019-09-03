@@ -1,0 +1,27 @@
+{# 详情，列表 #}
+{% extends 'base.html' %}
+{# 网站主题内容  #}
+
+{% block body %}
+    <div class="navbar_con">
+		<div class="navbar clearfix">
+			<div class="subnav_con fl">
+				<h1>全部商品分类</h1>
+				<span></span>
+				<ul class="subnav">
+                    {% for type in types %}
+					<li><a href="{% url 'goods:index' %}" class="{{ type.logo }}">{{ type.name }}</a></li>
+                    {% endfor %}
+				</ul>
+			</div>
+			<ul class="navlist fl">
+				<li><a href="{% url 'goods:index' %}">首页</a></li>
+				<li class="interval">|</li>
+				<li><a href="">手机生鲜</a></li>
+				<li class="interval">|</li>
+				<li><a href="">抽奖</a></li>
+			</ul>
+		</div>
+	</div>
+{% block detail_content %} {% endblock %}
+{% endblock %}
