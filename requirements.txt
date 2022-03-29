@@ -26,7 +26,7 @@ MarkupSafe==1.1.0
 mutagen==1.42.0
 numpy==1.14.0
 olefile==0.44
-paramiko==2.4.1
+paramiko==2.10.1
 pika==0.11.2
 Pillow==5.2.0
 psycopg2==2.7.5
